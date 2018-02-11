@@ -12,11 +12,20 @@ void main()
     printf("\nEnter the string 2");
     scanf("%s",&b);
     count=0;
+    j=0;
     for(i=0;i<n1;i++)
     {
+        if(j<n2)
+        {
         if(a[i]==b[i])
         {
             count++;
+        }
+            j++;
+        }
+        else
+        {
+            j=0;
         }
     }
     if(count==n2)
