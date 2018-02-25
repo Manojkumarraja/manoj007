@@ -12,7 +12,7 @@ void main()
         c[i]=a[i];
         d[i]=b[i];
     }
-    if(c>d)
+    if(c>=d)
     {
         printf("%s",a);
     }
