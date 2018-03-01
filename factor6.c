@@ -5,8 +5,11 @@ void main()
     printf("Enter a number");
     scanf("%d",&n);
     printf("\nFactors are\n");
-    for(i=1;i<=6;i++)
+    for(i=1;i<=n;i++)
     {
-        printf("\t%d",i);
+        if(n%i==0)
+        {
+         printf("\t%d",i);   
+        }
     }
 }
