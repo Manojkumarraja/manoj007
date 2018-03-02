@@ -2,7 +2,7 @@
 void main()
 {
     char a[10],b[10];
-    int c[100],d[100],i;
+    int c[100],d[100],i,n,n1;
     printf("Enter a string 1");
     scanf("%s",&a);
     printf("\nEnter a string 2");
@@ -12,7 +12,14 @@ void main()
         c[i]=a[i];
         d[i]=b[i];
     }
-    if(c>=d)
+    n=0;
+    n1=0;
+    for(i=0;a[i]!='\0';i++)
+    {
+        n+=c[i];
+        n1+=d[i];
+    }
+    if(n>=n1)
     {
         printf("%s",a);
     }
@@ -21,4 +28,3 @@ void main()
         printf("%s",b);
     }
 }
-
