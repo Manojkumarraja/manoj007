@@ -1,16 +1,20 @@
 #include<stdio.h>
+#include<math.h>
 void main()
 {
-    int a,b,c;
+    int a,b,c,n;
     printf("Enter two numbres");
     scanf("%d%d",&a,&b);
     c=a*b;
-    if(a==b)
+    n=sqrt(c);
+    if(n*n==c)
     {
-        printf("\nYES perfect square");
+       printf("\nYES"); 
     }
     else
     {
-        printf("\nNOT perfect square");
-    }
+    printf("\nNO");
+        
+
 }
+             }
