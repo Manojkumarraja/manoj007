@@ -1,13 +1,13 @@
 #include<stdio.h>
 void main()
 {
-    char a[20];
+    char str[20];
     int i,count=0,count1=0,n;
     printf("Eter a string");
-    scanf("%s",&a);
-    for(i=0;a[i]!='\0';i++)
+    scanf("%s",&str);
+    for(i=0;str[i]!='\0';i++)
     {
-        if(((a[i]>=65)&&(a[i]<=91))||((a[i]>=97)&&(a[i]<=123))||a[i]=='.')
+        if(((str[i]>=65)&&(str[i]<=91))||((str[i]>=97)&&(str[i]<=123))||str[i]=='.')
         {
             count++;
         }
@@ -15,6 +15,6 @@ void main()
     }
     n=count1-count;
     
-    printf("\nNumber of integer is %d",n);
+    printf("\nNumber of special character is %d",n);
     
 }
