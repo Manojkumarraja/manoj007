@@ -21,9 +21,5 @@ void main()
         }
     }
     }
-    for(i=0;i<n;i++)
-    {
-        printf("\t%d",a[i]);
-    }
     printf("%d",a[(n-1)/2]);
 }
