@@ -1,5 +1,5 @@
 #include<stdio.h>
-void main()
+int main()
 {
     int i,j,n,num=0,n1=0;
     char a[10],b[10],c[10],d[10],e[10];
@@ -91,5 +91,6 @@ void main()
                     }
                     }
                     }
+                    return 0;
     
 }
